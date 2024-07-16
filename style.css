@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+section{
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+header .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+header nav{
+    display: flex;
+}
+header nav li{
+    margin-left: 50px;
+}
+/* =========================================================== */
+.banner-section{
+    margin: 80px 0 80px 0;
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner div{
+    width: 50%;
+}
+.banner-image{
+    display: flex;
+    justify-content: center;
+    background: url('images/Circle\ design.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.banner a{
+
+    padding: 10px 24px 10px 24px;
+    border-radius: 41px;
+    background: rgb(224, 44, 109);
+}
+.banner-text>*{
+    margin-bottom: 30px;
+}
+.banner-text h1{
+    font-size: 52px;
+    font-weight: 700;
+}
+/* ===================================================== */
+.company-list{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    align-items: center;
+    justify-items: space-evenly;
+    margin-top: 0px;
+}
+
+/* =============================================================== */
+.title{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.items img{
+    width: 100%;
+}
+.items .card{
+    padding: 10px 10px 30px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15)
+}
+.items .card>*{
+    margin-bottom: 10px;
+}
+.see-more{
+    text-align: right;
+    color: rgba(224, 44, 109, 0.87);
+}
+/* ====================================================== */
+footer{
+    text-align: center;
+    padding: 30px;
+    background-color: navy;
+    color: white;
+}
+footer>*{
+    margin: 20px;
+}
+/* ========================================================= */
+.feature{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.feature div{
+    width: 47%;
+}
+.feature img{
+    width: 100%;
+}
+.feature-text>*{
+    margin-bottom: 25px;
+}
+.feature-text a{
+    padding: 10px 24px 10px 24px;
+    border-radius: 5px;
+    background: rgb(224, 44, 109);
+}
+@media screen and (max-width:576px){
+
+    section{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .banner div, .feature div{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    header .navbar{
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .company-list{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .company-list img{
+        width: 50px;
+        height: 30px;
+    }
+    .items{
+        grid-template-columns: 1fr;
+    }
+    .feature{
+        flex-direction: column-reverse;
+    }
+}
